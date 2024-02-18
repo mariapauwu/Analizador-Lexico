@@ -16,7 +16,7 @@ public class AnalizadorLexico {
                 "    public static void main(String[] args) {" +
                 "        int limiteSuperior = 10;" +
                 "        int resultado = calcularSuma(limiteSuperior);" +
-                "        System.out.println(\"La suma de los números del 1 al \" + limiteSuperior + \" es: \" + resultado);" +
+                "        System.out.println(\"La suma de los numeros del 1 al \" + limiteSuperior + \" es: \" + resultado);" +
                 "    }" +
                 "/* Este es un comentario */" +
                 "    static int calcularSuma(int n) {" +
