@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package analizadorlexico;
 
-/**
- *
- * @author maria
- */
 public class Token {
     
     private String valor;
@@ -34,13 +27,14 @@ public class Token {
         NUMERO("\\d+"),
         OPERADOR("[-+*/=]"),
         CADENA("[A-Z]+"),
-        SIMBOLO("[.,;:?!()]");
-        
+        SIMBOLO("[.,;:?!()]"),
+        COMENTARIO("/\\*.*?\\*/"); 
+    
         public final String patron;
     
         Tipos(String s) {
             this.patron = s;
         }
     }
-
 }
+
